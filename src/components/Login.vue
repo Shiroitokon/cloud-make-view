@@ -58,10 +58,10 @@ export default {
                   //   "access-user",
                   //   JSON.stringify(result.user)
                   // );
-                  localStorage.setItem("access-token", result.token);
-                  console.log(result.router)
-                  localStorage.setItem("menus", JSON.stringify(result.router));
-                  localStorage.setItem("perms",JSON.stringify(result.perms))
+                  localStorage.setItem("access-token", result.data.token);
+                  console.log(result.data.router)
+                  localStorage.setItem("menus", JSON.stringify(result.data.router));
+                  localStorage.setItem("perms",JSON.stringify(result.data.perms))
                   // that.$store.commit("SET_ROUTERS", result.router);
                   // that.$router.addRoutes(that.$store.getters.addRouters);
                   //that.$router.addRoutes(result.router)
